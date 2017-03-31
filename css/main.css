@@ -1,0 +1,55 @@
+*{margin:0;padding:0;}
+body{height:100%;}
+a,a:link,a:visited,a:hover,a:active{color:#000;text-decoration:none;}
+.clearfix:after {content: ""; display: block; clear: both;}
+img{width:100%}
+/*index.html*/
+.index-bg{position:absolute;top:.3rem;right:.3rem;bottom:.3rem;left:.3rem;border:2px solid rgba(0,0,0,.6);background:url(../img/souye@2x.png) no-repeat center;background-size:4rem 3.04rem;background-attachment:fixed;font-family:STKaiti-SC-Bold;font-size:.34rem;letter-spacing:.06rem;}
+.left-top{position:absolute;top:.2rem;left:.2rem;}
+.right-top{position:absolute;top:.2rem;right:.2rem;}
+.right-bot{position:absolute;right:.2rem;bottom:.2rem;}
+.left-bot{position:absolute;left:.2rem;bottom:.2rem;}
+
+/*hey.html*/
+.com-title{font-size:.45rem;font-weight:bold;letter-spacing:.05rem;}
+.hr{margin:2rem auto;border:2px solid #000;width:198px;height:0px;font-family:STKaiti-SC-Bold;}
+.s-hr{margin:.3rem auto .6rem;border:1px solid #979797;width:.57rem;height:0px;}
+
+.hey-wrap{text-align:center;}
+.hey-wrap .wrapper{padding:.3rem;padding-bottom:0;}
+.header-nav{margin-bottom:2rem;padding:.3rem;font-size:.34rem;letter-spacing:6px;border:2px solid rgba(0,0,0,0.60);height:.44rem;overflow:hidden;}
+.header-nav span{float:right;margin-right:.6rem;cursor:pointer;}
+.header-nav span:nth-child(1){float:left;}
+.header-nav span:nth-child(2){margin-right:0;}
+
+.works{margin-bottom:2rem;}
+.works-title{margin-bottom:1rem;}
+.works-wrapper{padding:0 .7rem;}
+.works-wrapper .work-img{float:left;margin-bottom:.4rem;background:#f5f5f5;width:5.98rem;height:4rem;line-height:.4rem;}
+.works-wrapper .work-img:nth-child(odd){margin-right:.4rem;}
+
+.about{margin-bottom:.2rem;}
+.about-title{margin-bottom:1.5rem;}
+.about-container{}
+.about-container .anita-photo{margin:0 auto;width:2rem;height:2rem;}
+.about-container .anita-intro{font-family:.PingFangSC-Light;font-size:.3rem;color:#131212;letter-spacing:.04rem;line-height:.5rem;}
+.about-container .anita-intro .anita-name{margin:1rem auto;font-size:.6rem;line-height:.48rem;}
+
+.exper{}
+.exper-title{margin-bottom:1rem;}
+.exper-container{margin:0 3.2rem;height:.78rem;line-height:.78rem;}
+.exper-container .exper-item{float:left;margin-right:.8rem;width:.78rem;height:.78rem;line-height:.78rem}
+.exper-container .exper-item:last-child{margin-right:0;}
+
+.exper-detail .exper-time{height:.7rem;line-height:.7rem;font-size:.5rem;letter-spacing:.06rem;}
+.exper-detail .exper-com{margin-bottom:1rem;font-family:.PingFangSC-Light;font-size:.3rem;letter-spacing:.04rem;}
+
+.contact{}
+.contact .contact-title{margin-bottom:1rem;}
+.contact .contact-container{padding:.8rem 0;background:#000;border:2px solid rgba(0,0,0,0.60);color:#fff;height:4.1rem;}
+.contact .contact-container p:nth-of-type(1){margin-bottom:.45rem;font-family:Helvetica-Bold;font-size:.34rem;letter-spacing:.06rem;}
+.contact .contact-container p:nth-of-type(2){font-family:STKaiti-SC-Black;font-size:.4rem;}
+.contact .contact-container p:nth-of-type(2) span{color:#bd9646;}
+.contact .contact-container p:nth-of-type(3){margin-bottom:.3rem;font-family:STKaiti-SC-Regular;font-size:.34rem;color:#97949b;}
+.contact .contact-container p:nth-of-type(4){font-family:.PingFangSC-Regular;font-size:.2rem;color:#97949b;letter-spacing:.06rem;}
+.contact .contact-container .s-hr{margin:.7rem auto .8rem;}
