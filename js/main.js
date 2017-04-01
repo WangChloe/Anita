@@ -1,16 +1,47 @@
-;(function() {
-    var doc = document.documentElement;
+$(function() {
+    $doc = $(document);
+    $win = $(window);
+    $('html').css('fontSize', $doc.width() / 1436 * 100 + 'px');
+
+    $win.bind('resize', resize);
+    resize();
+    getSlide();
+    slideTo("#J_btn_work", "work");
+    slideTo("#J_btn_about", "about");
+    slideTo("#J_btn_contact", "contact");
+    slideTo('#J_btn_top');
 
     function resize() {
-        doc.style.fontSize = doc.clientWidth / 1436 * 100 + 'px';
+        $('html').css('fontSize', $doc.width() / 1436 * 100 + 'px');
     }
 
-    doc.style.fontSize = doc.clientWidth / 1436 * 100 + 'px';
-    window.addEventListener('resize', resize, false);
+    function slideTo(btn, target) {
+        if (target) {
+            if (!$('#' + target).length) {
+                return;
+            }
+            target = $('#' + target).offset().top;
+        } else {
+            target = 0;
+        }
+        $(btn).on('click', function() {
+            $('html, body').animate({
+                scrollTop: target
+            }, 500);
+        })
+    }
 
-    resize();
-})();
+    function getSlide() {
+        var target = window.location.hash;
+        if (target) {
+            target = target.substr(1);
+        } else {
+            return;
+        }
+        $('html, body').animate({
+            scrollTop: $('#' + target).offset().top
+        }, 500);
 
-// $( function(){
-//     // 在这里编写我们希望在DOM准备就绪后执行的代码
-// } );
+    }
+
+});
